@@ -21,6 +21,7 @@ fi
 
 echo "running test262..."
 
+env
 start=$(date +%s)
 NODE_OPTIONS="--max-old-space-size=4096" test262-harness \
 	--host-type="$1" \
