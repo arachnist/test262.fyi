@@ -25,7 +25,7 @@ env
 start=$(date +%s)
 NODE_OPTIONS="--max-old-space-size=4096" test262-harness \
 	--host-type="$1" \
-	--host-path="$2" \
+	--host-path="/usr/bin/env" \
 	--reporter=json \
 	--reporter-keys=file,result,scenario,attrs \
 	--timeout=6000 \
